@@ -24,7 +24,8 @@ walkRight = [pygame.transform.flip(walkLeft[0], True, False),
              pygame.transform.flip(walkLeft[5], True, False),
              pygame.transform.flip(walkLeft[6], True, False)]
 
-
+menu_pic1 = pygame.image.load('images/menu_pic.png')
+menu_pic2 = pygame.image.load('images/menu_pic2.png')
 bg = pygame.transform.scale(pygame.image.load('images/bg14.png'), (1000, 600))
 char_l = pygame.image.load('images/l_stand.png')
 char_r = pygame.transform.flip(char_l, True, False)
