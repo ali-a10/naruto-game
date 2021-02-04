@@ -9,14 +9,26 @@ def main_menu():
 
     while menu:
         window.fill((255, 215, 0))
-        pygame.draw.rect(window, (255, 255, 255), (0, 57, win_width, 4))
         menu_font = pygame.font.SysFont('Agency FB', 100, True)
-        menu_text = menu_font.render('MENU', 1, (255, 255, 255))
+        inst_font = pygame.font.SysFont('Agency FB', 40, True)
         press_space1 = menu_font.render('Press Space to Start', 1,
                                         (255, 255, 255))
+        inst_title = menu_font.render('Instructions', 1, (5, 14, 166))
+        instructions1 = inst_font.render('Use arrows to move', 1, (5, 14, 166))
+        instructions2 = inst_font.render('Space to throw weapon', 1,
+                                         (5, 14, 166))
+        instructions3 = inst_font.render('X for special ability', 1,
+                                         (5, 14, 166))
 
-        window.blit(menu_text, (400, 100))
-        window.blit(press_space1, (150, 280))
+        window.blit(press_space1, (150, 75))
+        pygame.draw.rect(window, (255, 255, 255), (0, 208, win_width, 4))
+        window.blit(inst_title, (288, 225))
+        window.blit(instructions1, (365, 335))
+        window.blit(instructions2, (350, 390))
+        window.blit(instructions3, (375, 445))
+        window.blit(menu_pic1, (720, 210))
+        window.blit(menu_pic2, (0, 205))
+        
         for event12 in pygame.event.get():
             if event12.type == pygame.QUIT:
                 menu = False
