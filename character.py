@@ -60,7 +60,7 @@ class Character:
         self.standing = True
         self.throwing = False
         self.hitbox = (self.x, self.y, self.width, self.height)
-        self.max_health = 1
+        self.max_health = 10
         self.curr_health = self.max_health
         self.ult = False
         self.u_count = 0
